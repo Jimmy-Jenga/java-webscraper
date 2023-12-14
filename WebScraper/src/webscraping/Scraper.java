@@ -10,7 +10,7 @@ import java.net.URL;
  * This is the static Scraper class that will be used to scrape pages
  * 
  * @author Dylan Watts
- * @version 0.1
+ * @version 0.2
  *
  */
 public final class Scraper {
@@ -57,11 +57,19 @@ public final class Scraper {
 			}
 			reader.close();
 			Scraper.content = response.toString();
+			Scraper.clean();
 		} catch (Exception e) {
 			e.printStackTrace();
 			Scraper.success = false;
 		}
 		return Scraper.success;
+	}
+	
+	/**
+	 * Cleans the content to make it more readable
+	 */
+	public static void clean() {
+		Scraper.content = Scraper.content.replace(">", ">\n");
 	}
 	
 	/**

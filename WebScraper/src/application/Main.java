@@ -6,9 +6,19 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 
-
+/**
+ * Main class, creates GUI
+ * 
+ * @author Dylan Watts
+ * @version 0.2
+ */
 public class Main extends Application {
 	
+	/**
+	 * Starts JavaFX, uses resource main-window.fxml
+	 * 
+	 * @param primaryStage - The primary stage of the GUI
+	 */
 	@Override
 	public void start(Stage primaryStage) {
 		try {

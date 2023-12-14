@@ -5,7 +5,7 @@ package webscraping;
  * The Webpage class is used for storing information about the scraped page
  * 
  * @author Dylan Watts
- * @version 0.1
+ * @version 0.2
  *
  */
 public class Webpage {
@@ -28,10 +28,18 @@ public class Webpage {
 		}
 	}
 	
+	/**
+	 * Getter for the URL of the web page
+	 * @return url
+	 */
 	public String getURL() {
 		return url;
 	}
 	
+	/**
+	 * Getter for the content of the web page
+	 * @return content
+	 */
 	public String getContent() {
 		return content;
 	}
